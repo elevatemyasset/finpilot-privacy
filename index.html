@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | FinPilot by Elevate AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0A2540;
+            --teal: #00C896;
+            --soft-bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #334155;
+            --text-light: #64748B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--soft-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- LOGO SECTION --- */
+        .header-logo-bar {
+            background: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-logo {
+            max-width: 220px; /* Adjust based on your preference */
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            color: white;
+            padding: 4rem 1rem 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -1.5px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .container {
+            max-width: 850px;
+            margin: -4rem auto 4rem;
+            padding: 0 1.2rem;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px -12px rgba(10, 37, 64, 0.1);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: var(--navy);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.4rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: "";
+            width: 5px;
+            height: 20px;
+            background: var(--teal);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #475569;
+        }
+
+        .highlight {
+            color: var(--teal);
+            font-weight: 700;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .dev-credit {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .portfolio-link {
+            color: var(--navy);
+            font-weight: 800;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        .portfolio-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--teal);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 640px) {
+            .hero { padding: 4rem 1rem 5rem; }
+            .policy-card { padding: 1.8rem; border-radius: 20px; }
+            .meta-info { flex-direction: column; gap: 8px; text-align: center; }
+            .main-logo { max-width: 180px; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-logo-container">
+        <img src="finpilot.png" alt="FinPilot Logo" class="main-logo">
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p>Your financial security is built into our code. Transparent data practices for a smarter financial future.</p>
+</section>
+
+<main class="container">
+    <div class="policy-card">
+        <div class="meta-info">
+            <span>FinPilot</span>
+            <span>Last Updated: April 13, 2026</span>
+        </div>
+
+        <p><strong>FinPilot</strong> is a personal finance management tool developed by <strong>Elevate AI</strong>. This policy outlines how we protect your information while you focus on growing your wealth.</p>
+
+        <h2>1. Our Data Philosophy</h2>
+        <p>We believe your financial data belongs to you. FinPilot is designed to process information locally whenever possible, reducing the footprint of your sensitive data on the web.</p>
+
+        <h2>2. Information We Collect</h2>
+        <ul>
+            <li><strong>On-Device Data:</strong> Records of expenses, income, and budgets are stored locally using <span class="highlight">Hive</span>.</li>
+            <li><strong>Cloud Sync:</strong> If you enable synchronization, data is encrypted and managed via <span class="highlight">Firebase</span>.</li>
+            <li><strong>Portfolio link:</strong> Technical support and development attribution is managed by the developer.</li>
+        </ul>
+
+        <h2>3. Security Standards</h2>
+        <p>Your data is protected using industry-standard encryption protocols. We utilize Firebase’s robust security rules to ensure that only you can access your synchronized financial records.</p>
+
+        <h2>4. Third Party Services</h2>
+        <p>To provide a stable experience, we use Google Play Services and Firebase Crashlytics for performance monitoring and bug reporting.</p>
+
+        <h2>5. Contact & Support</h2>
+        <p>For any privacy-related inquiries, please reach out to the developer directly via the portfolio link provided below.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="dev-credit">
+        Built with care by
+        <a href="https://ashrafmbstu.github.io/" class="portfolio-link" target="_blank">Md Ashraful Islam</a>
+        <br><br>
+        <span style="font-size: 0.85rem; color: #94a3b8;">&copy; 2026 Elevate AI.</span>
+    </div>
+</footer>
+
+</body>
+</html>
