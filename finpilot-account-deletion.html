@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Policy | FinPilot by Elevate AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0A2540;
+            --teal: #00C896;
+            --soft-bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #334155;
+            --text-light: #64748B;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--soft-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            color: white;
+            padding: 5rem 1rem 7rem;
+            text-align: center;
+        }
+
+        .hero-logo-container {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-logo {
+            max-width: 220px;
+            height: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -1.5px;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* --- MAIN CONTENT --- */
+        .container {
+            max-width: 850px;
+            margin: -5rem auto 4rem;
+            padding: 0 1.2rem;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            padding: 3.5rem;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px -12px rgba(10, 37, 64, 0.08);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            color: var(--navy);
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: #f1f5f9;
+            color: var(--navy);
+            padding: 0.35rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--navy);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.35rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: "";
+            width: 5px;
+            height: 20px;
+            background: var(--teal);
+            border-radius: 10px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #475569;
+            font-size: 1.05rem;
+        }
+
+        /* --- LIST STYLING --- */
+        ol, ul {
+            margin: 1.25rem 0;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #475569;
+            font-size: 1.05rem;
+            padding-left: 4px;
+        }
+
+        li::marker {
+            color: var(--teal);
+            font-weight: bold;
+        }
+
+        /* --- LINKS & UTILITIES --- */
+        .highlight {
+            color: var(--teal);
+            font-weight: 700;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 3rem;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--navy);
+        }
+
+        .email-link {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--teal);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .dev-credit {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .portfolio-link {
+            color: var(--navy);
+            font-weight: 800;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        .portfolio-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--teal);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-link:hover::after {
+            transform: scaleX(1);
+        }
+
+        /* --- RESPONSIVE DESIGN --- */
+        @media (max-width: 640px) {
+            .hero { padding: 4rem 1rem 6rem; }
+            .container { margin-top: -4rem; }
+            .policy-card { padding: 2rem 1.5rem; border-radius: 20px; }
+            .meta-info { flex-direction: column; gap: 8px; text-align: center; }
+            .main-logo { max-width: 180px; }
+            .card-title { font-size: 1.6rem; }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-logo-container">
+        <img src="finpilot.png" alt="FinPilot Logo" class="main-logo">
+    </div>
+    <h1>Privacy & Data</h1>
+    <p>Your financial security is built into our code. Transparent data practices for a smarter financial future.</p>
+</section>
+
+<main class="container">
+    <div class="policy-card">
+        <div class="meta-info">
+            <span>FinPilot</span>
+            <span>Last Updated: April 13, 2026</span>
+        </div>
+
+        <h1 class="card-title">Account Deletion</h1>
+        <div class="app-badge">Application: FinPilot by Elevate AI</div>
+
+        <h2>How to delete your account</h2>
+        <ol>
+            <li>Open the <strong>FinPilot</strong> app on your device.</li>
+            <li>Navigate to the <strong>Settings</strong> panel.</li>
+            <li>Select the <span class="highlight">Delete My Data</span> option.</li>
+            <li>Confirm your choice in the security pop-up.</li>
+        </ol>
+
+        <h2>What will be permanently deleted</h2>
+        <ul>
+            <li>All recorded transaction histories (income & expenses).</li>
+            <li>Custom budgets, financial goals, debts, and custom categories.</li>
+            <li>All associated secure cloud backup profiles.</li>
+        </ul>
+
+        <h2>Processing time</h2>
+        <p>Your deletion request is processed instantly. Complete purging across all distributed database nodes and historical backups finishes automatically within <strong class="highlight">30 days</strong>.</p>
+
+        <h2>Need assistance?</h2>
+        <p>If you encounter issues deleting your account via the interface, reach out directly at: <a href="mailto:elevatemyasset@gmail.com" class="email-link">elevatemyasset@gmail.com</a></p>
+
+        <a href="index.html" class="back-link">← Return to Privacy Policy</a>
+    </div>
+</main>
+
+<footer>
+    <div class="dev-credit">
+        Built with care by
+        <a href="https://ashrafmbstu.github.io/" class="portfolio-link" target="_blank">Md Ashraful Islam</a>
+        <br><br>
+        <span style="font-size: 0.85rem; color: #94a3b8;">&copy; 2026 Elevate AI. All rights reserved.</span>
+    </div>
+</footer>
+
+</body>
+</html>
